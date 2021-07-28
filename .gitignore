@@ -1,2 +1,11 @@
-/.idea/
+### Project
 /config/config.env
+
+### Intellij Idea
+/.idea/
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
