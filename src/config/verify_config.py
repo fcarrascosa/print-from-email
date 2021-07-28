@@ -4,5 +4,4 @@ def verify_config(required_data, config):
         if config.get(key) in [None, '']:
             print(key + ' env config is missing.')
             is_valid = False
-    else:
-        return is_valid
+    return is_valid
