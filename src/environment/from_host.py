@@ -2,7 +2,7 @@ from os import getenv
 
 
 def from_host(keys):
-    config = {};
+    config = {}
     for key in keys:
         if getenv(key):
             config[key] = getenv(key)

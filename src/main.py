@@ -1,4 +1,5 @@
-from environment_utils import get_config
+from environment import get_environment
+from config import verify_config
 
 REQUIRED_DATA = [
     'ORG_EMAIL',
@@ -10,4 +11,6 @@ REQUIRED_DATA = [
     'PRINTER_NAME'
 ]
 
-CONFIG = get_config(REQUIRED_DATA)
+CONFIG = get_environment(REQUIRED_DATA)
+
+verify_config(REQUIRED_DATA, CONFIG)
